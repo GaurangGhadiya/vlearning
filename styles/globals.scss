@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* scroll bar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a7a7a7;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --primary-yellow: hsl(48, 100%, 50%);
+  --primary-yellow-hover: hsl(48, 100%, 60%);
+  --background-gray: #f0f0f0;
+  --gradient-dark-blue: hsl(198, 100%, 24%);
+  --gradient-light-blue: hsl(186, 100%, 29%);
+  --secondry-gradient: linear-gradient(to right bottom, #00567c, #008494);
+  --secondry-purple: #6270ea; //depricated
+  --secondry-blue: #0b2b4f; //deprecated
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.1) {
+  
+}

@@ -1,0 +1,119 @@
+.card {
+  height: 335px;
+  max-width: 420px;
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: rgb(0 0 0 / 38%) 0px -1px 4px;
+}
+
+.card .sec1 {
+  display: flex;
+}
+
+.sec1 .faculty {
+  width: 30%;
+  padding: 0px 10px;
+}
+
+.faculty .facultyImg {
+  height: 85px;
+  width: 85px;
+  border-radius: 4px;
+  border: 2px solid #ae372f;
+}
+.faculty .facultyName {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sec1 .product {
+  width: 70%;
+}
+
+.product .productName {
+  height: 70px;
+  font-size: 16px;
+  color: #0b2b4f;
+  font-weight: 500;
+}
+
+.product .productCategory {
+  font-size: 15px;
+  font-weight: 500;
+  color: #848484;
+  margin-bottom: 5px;
+}
+
+.product .finalCost {
+  display: inline;
+  color: red;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.product .originalCost {
+  display: inline;
+  text-decoration: line-through;
+}
+
+.off {
+  display: none;
+}
+
+.card {
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+  }
+}
+
+.card th {
+  border: 1px solid #44427b;
+  padding: 5px 1px;
+  background-color: #d5d4dd;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card td {
+  border: 1px solid #bbbbbb;
+  text-align: center;
+  padding: 5px 1px;
+  font-size: 14px;
+}
+
+.actionLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.format {
+  margin-top: 10px;
+  padding: 0px 5px;
+}
+
+.format > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.format > div > h5 {
+  margin-right: 8px;
+  font-weight: 500;
+  color: #0b2b4f;
+}
+
+.actionLinks {
+  padding-top: 10px;
+  border-top: 1px solid #0b2b4f31;
+}

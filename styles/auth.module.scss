@@ -1,0 +1,151 @@
+.container {
+  height: 100vh;
+  background-color: #a9a9a9;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+
+// image container
+.imageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  color: white;
+  top: -20px;
+  left: 20px;
+
+  h3 {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+//Right signUpForm
+.signUpForm {
+  background-color: white;
+  z-index: 1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  position: relative;
+  right: 50px;
+
+  & * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  input {
+    // height: 35px;
+    border-radius: 4px;
+    outline: 0px;
+    border: 1px solid darkgray;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    font-size: 16px;
+  }
+
+  input:focus {
+    border: 1px solid #1877f2;
+  }
+
+  [type="submit"] {
+    margin-top: 20px;
+    background-color: #1877f2;
+    color: white;
+  }
+  label {
+    flex-grow: 0;
+    color: #6d6d6d;
+  }
+
+  .signInInstead {
+    // padding-top: 10px;
+    font-size: small;
+    display: flex;
+  }
+}
+
+//login form
+.signInForm {
+  background-color: white;
+  z-index: 1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  position: relative;
+  right: 50px;
+
+  & > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  input {
+    // height: 35px;
+    border-radius: 4px;
+    outline: 0px;
+    border: 1px solid darkgray;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    font-size: 16px;
+  }
+
+  input:focus {
+    border: 1px solid #1877f2;
+  }
+
+  [type="submit"] {
+    margin-top: 20px;
+    background-color: #1877f2;
+    color: white;
+  }
+  label {
+    flex-grow: 0;
+    color: #6d6d6d;
+  }
+
+  .signUpInstead {
+    font-size: small;
+    display: flex;
+  }
+}

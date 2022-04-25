@@ -1,0 +1,45 @@
+.searchWidget{
+  height: 40px;
+  flex-grow: 2;
+  // background-color: orange;
+  position: absolute;
+  
+  .searchCategory{
+    height: 100%;
+    background-color: #EBEBEB;
+    border: 0px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+    
+    position: relative;
+    top: 1px;
+  }
+  .searchCategory:hover{
+    background-color: #DEDEDE;
+  }
+
+  .searchBox{
+    height: 100%;
+    border: 2px solid #DEDEDE;
+    // border: hidden;
+    outline-color: var(--secondry-purple);
+    width: 380px;
+    // font-size: 14px;
+    padding: 0px 10px;
+    // font-family: inherit;
+  }
+  .searchButton{
+    height: 100%;
+    background-color: #FFCB01;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    // color: white;
+  }
+
+  .searchButton:hover{
+    background-color: var(--secondry-blue);
+    color: white;
+  }
+}

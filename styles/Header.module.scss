@@ -1,0 +1,21 @@
+/* header section 1 */
+.header .sec1 {
+  background-image: var(--secondry-gradient);
+ 
+}
+
+.sec1>div{
+  display: flex;
+  color: white;
+
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.sec1 *{
+  font-weight: 300;
+}

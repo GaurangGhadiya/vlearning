@@ -1,0 +1,122 @@
+.main {
+  background-color: var(--background-gray);
+
+  & .container {
+    max-width: 1500px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "category sort"
+      "category card";
+    padding: 20px 0px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    & .categorySection {
+      grid-area: category;
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px 0px;
+      box-shadow: rgb(0 0 0 / 10%) 0px -1px 4px;
+
+      & > h3 {
+        border-bottom: 2px dotted #a7a7a7;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      & > .categories {
+        & h4 {
+          margin-top: 10px;
+          padding: 10px 15px;
+          background-color: var(--primary-yellow);
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        & .categoryList {
+          padding: 0px 15px;
+          max-height: 300px;
+          overflow-y: scroll;
+
+          & li {
+            border-bottom: 1px dotted #a7a7a7;
+            padding: 4px 0px;
+          }
+        }
+      }
+    }
+
+    & .sortSection {
+      grid-area: sort;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: rgb(0 0 0 / 10%) 0px -1px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      & .sortBy {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+
+        &:hover>:not(.sortOptions) {
+          color: darkblue;
+          cursor: pointer;
+        }
+
+        &:hover>.sortOptions{
+          display:block;
+        }
+
+        & h5 {
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        & .sortOptions {
+          position: absolute;
+          width: 130px;
+          top: 45px;
+          right: 20px;
+          border: 1px solid darkgray;
+          border-radius: 5px;
+          padding: 3px 2px;
+          background-color: white;
+          z-index: 2;
+          font-size: 14px;
+          box-shadow: rgb(0 0 0 / 10%) 0px -1px 4px;
+          display: none;
+
+          &>li:hover{
+            background-color: lightgray;
+          }
+          &>li *{
+            color: #6B7280;
+          }
+
+          & .active *{
+            color: black;
+          }
+        }
+      }
+    }
+
+    & .cardSection {
+      grid-area: card;
+      // background-color: pink;
+      flex-grow: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 30px;
+    }
+  }
+}

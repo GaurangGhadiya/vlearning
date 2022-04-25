@@ -1,0 +1,105 @@
+.footer {
+  background-image: linear-gradient(to right, #00567c, #008494);
+  color: white;
+  margin-top: auto;
+  position: relative;
+  // bottom: -50px;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .contentArea {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    // background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 250px;
+
+    .logoSection {
+      align-self: center;
+      .imageCaption {
+        padding-top: 10px;
+        position: relative;
+        left: 10px;
+        font-size: large;
+      }
+    }
+
+    .otherLinks {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .joinUs {
+      // background-color: pink;
+      .socials {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > a {
+          margin-top: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .getInTouch {
+      background-color: transparent;
+      position: relative;
+      left: -40px;
+
+      p:first-of-type {
+        font-style: italic;
+      }
+      p:last-child {
+        margin-top: 10px;
+        font-weight: 200;
+        // background-color: red;
+      }
+    }
+
+    .otherLinks,
+    .joinUs,
+    .getInTouch {
+      margin-top: 40px;
+
+      & > h2 {
+        font-weight: 500;
+        padding-bottom: 20px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 50px;
+          left: 0px;
+          bottom: 10px;
+          z-index: 99;
+          background-color: white;
+        }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      font-size: 14px;
+
+      text-align: center;
+    }
+
+    .devContact {
+      position: absolute;
+      bottom: 5px;
+      right: 0px;
+      font-size: 12px;
+    }
+  }
+}

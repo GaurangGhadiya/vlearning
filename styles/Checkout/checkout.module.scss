@@ -1,0 +1,17 @@
+.checkoutPage {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-auto-rows: 100vh;
+
+  & > * {
+    padding-top: 100px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+  
+}
+

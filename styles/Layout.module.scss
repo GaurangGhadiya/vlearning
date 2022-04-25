@@ -1,0 +1,22 @@
+.waButton {
+  position: fixed;
+  background-color: #319431;
+  bottom: 20px;
+  right: 0px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 12px;
+
+  & p {
+    padding-right: 10px;
+    font-size: 16px;
+    display: none;
+
+  }
+
+  &:hover>p {
+    display: block;
+  }
+}
